@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f585e5d0.css",
+    "main.js": "/static/js/main.b465318b.js",
+    "static/media/Screenshot-17.png": "/static/media/Screenshot-17.7e95d875da2bbcd2d6d5.png",
+    "static/media/Screenshot-6.png": "/static/media/Screenshot-6.6cdcda9d75c29cf69c94.png",
+    "static/media/ProPic.png": "/static/media/ProPic.53129d486f70834cba98.png",
+    "static/media/ComputerDesign.png": "/static/media/ComputerDesign.7f0eeb8c538c2a8e2254.png",
+    "static/media/Project3-index-page.PNG": "/static/media/Project3-index-page.06d1796109f623913bba.PNG",
+    "index.html": "/index.html",
+    "main.f585e5d0.css.map": "/static/css/main.f585e5d0.css.map",
+    "main.b465318b.js.map": "/static/js/main.b465318b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f585e5d0.css",
+    "static/js/main.b465318b.js"
+  ]
+}
