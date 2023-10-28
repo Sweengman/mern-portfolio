@@ -1,22 +1,24 @@
 import { Link } from 'react-router-dom'
-import * as userService from '../../utilities/users-service'
+import ghlogo from '../../data/LI-In-Bug.png'
+import lilogo from '../../data/github-mark-white.png'
+import './NavBar.css'
 
-export default function NavBar({ user }) {
-    function handleLogOut() {
-        userService.logOut()
 
-        SpeechSynthesisUtterance(null)
-    }
+export default function NavBar() {
 
     return(
         <nav>
-            <Link to='/orders'>Order History</Link>
+            <Link to='/about'>About Me</Link>
             &nbsp; | &nbsp;
-            <Link to='/orders/new'>New Order</Link>
+            <Link to='/mytech'>Technologies and Projects</Link>
             &nbsp; | &nbsp;
-            <span>Welcome, {user.name} </span>
+            <Link to='/'>Main Page</Link>
             &nbsp; | &nbsp;
-            <Link to="" onClick={ handleLogOut }>Log Out</Link>
+            <Link to='/email'>Contact Me(Email)</Link>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <Link to='/linkedin/sweeney' target='_blank' rel='noopener noreferrer'><img className='nav' src={ lilogo } alt='LinkedIn' /></Link>
+            &nbsp; &nbsp;
+            <Link to='/github/sweeney' target='_blank' rel='noopener noreferrer'><img className='nav' src={ ghlogo } alt='GitHub' /></Link>
         </nav>
     )
 } 

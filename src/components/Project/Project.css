@@ -1,0 +1,27 @@
+
+.Project {
+    height: 12rem;
+    width: 24rem;
+    border: 2px solid black;
+    margin: 0;
+    background-size: contain;
+    justify-content: center;
+    align-content: baseline;
+}
+
+.Project-detail {
+    height: 6.87rem;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.646);
+    color: white;
+}
+
+.Project-detail>a {
+    color: white;
+}
+
+.Project-title {
+    height: 12rem;
+    background-color: rgba(0, 0, 0, 0.048);
+    text-justify: top;
+}

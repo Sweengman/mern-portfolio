@@ -1,30 +1,38 @@
 
 import './App.css'; 
 import { Route, Routes } from 'react-router-dom'
-import { getUser } from '../../utilities/users-service'
 import { useState } from 'react'
-import AuthPage from '../AuthPage/AuthPage'
+import MainPage from '../MainPage/MainPage'
 import NavBar from '../../components/NavBar/NavBar'
-import NewOrderPage from '../NewOrderPage/NewOrderPage'
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
+import TechAndProjects from '../TechAndProjects/TechAndProjects'
+import AboutMe from '../AboutMe/AboutMe'
 
 
 export default function App() {
-  const [user, setUser] = useState(getUser())
   return (
-    <main className="App">
-      { user ?
-        <> 
-          <NavBar user={user} />
+    <main className='App'>
+          <NavBar />
           <Routes>
-            <Route path="/orders/new" element={ <NewOrderPage /> } />
-            <Route path="/orders" element={ <OrderHistoryPage /> } />
+            <Route path='/about' element={ <AboutMe /> } />
+            <Route path='/mytech' element={ <TechAndProjects /> } />
+            <Route path='/' element={ <MainPage /> } />
+            <Route path='/linkedin/sweeney' Component={() => {
+              window.location.href = 'https://www.linkedin.com/in/sweeney-corniea/'
+              return null;
+            }}/>
+            <Route path='/GitHub/sweeney' Component={() => {
+              window.location.href = 'https://github.com/Sweengman'
+              return null;
+            }}/>
+            <Route path='/email' Component={() => {
+              window.location.href = 'mailto: sweenfi@gmail.com'
+              return null;
+            }}/>
+            <Route path='/resume' Component={() => {
+              window.location.href = 'https://docs.google.com/document/d/1cr3gg7TDaDBkAJZN80b-Vj30NLn10YHKpEwxGvzM2og/edit?usp=sharing'
+              return null;
+            }}/>
           </Routes>
-        </>
-        :
-        <AuthPage setUser={setUser} />
-
-      }
     </main>
   );
 }

@@ -1,3 +1,5 @@
-# MERN-Stack Infrastructure 
+# My Portfolio
 
-Clone this repo to provide the staryer code for a comprehensive MERN-Stack project including token-based authentication
+Currently has capacity to use Mongo through express, but no functionality has been added. 
+
+Next Updates: overhaul background style and adjust main pic to custom design. 
